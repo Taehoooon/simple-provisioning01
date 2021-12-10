@@ -59,7 +59,6 @@
       name: public_sg
       description: sg with rule descriptions
       vpc_id: "{{ result_vpc.vpc.id }}"
-#      profile: "{{ aws_profile }}"
       region: "{{ aws_region }}"
       rules:
         - proto: tcp
@@ -81,4 +80,4 @@
       vpc_subnet_id: "{{ result_subnet.subnet.id }}"
       assign_public_ip: yes
       instance_tags:
-       Name: webserver
+        Name: webserver
